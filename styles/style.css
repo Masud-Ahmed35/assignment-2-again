@@ -166,6 +166,30 @@ body {
     align-items: center;
 }
 
+/* --------------------View All Button Style------------------------  */
+.btn-div {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-view {
+    width: 15%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #DD0000;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 0;
+
+
+}
+
+
 /*------------------------------------------
               Footer Style 
 --------------------------------------------*/
@@ -365,7 +389,7 @@ body {
     .footer-icon {
         text-align: center;
         display: block;
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
@@ -466,6 +490,11 @@ body {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
         column-gap: 25px;
+    }
+
+    /* -------------button visibility--------------  */
+    .btn-div {
+        visibility: visible;
     }
 
     /* ---------------------footer ----------------------- */

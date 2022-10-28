@@ -1,0 +1,147 @@
+/* ------------------main body------------------  */
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 1321px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/*------------------------------------------
+       Side Navigation Bar Style 
+--------------------------------------------*/
+
+.side-navigation-bar {
+    width: 252px;
+    height: 252px;
+    background: #161616;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.navigation {
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 17px 0;
+    margin-top: 20px;
+}
+
+#upcoming-id {
+    background-color: #DD0000;
+    color: white;
+}
+
+
+
+/*.....................................
+        Match Fixture Style 
+---------------------------------------*/
+
+.fixture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 25px;
+}
+
+.fixture-box {
+    width: 290px;
+    height: 200px;
+    background-color: rgb(251, 245, 239);
+    padding-top: 30px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.flag {
+    display: flex;
+    gap: 30px;
+}
+
+.fixture-detail {
+    text-align: center;
+}
+
+.fixture-detail h1 {
+    font-size: 30px;
+}
+
+/* ----------------media query------------------- */
+
+/* -------------------Mobile device---------------- */
+@media screen and (max-width: 576px) {
+
+    /* ------------------------- side bar-------------------------- */
+    .side-navigation-bar {
+        width: 210px;
+        height: 176px;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 70px;
+
+    }
+
+    #blog-id {
+        padding: 17px 75px;
+        background-color: white;
+        color: #161616;
+    }
+
+    /* ------------------main body -------------------------- */
+    .main-body {
+        grid-template-columns: repeat(1, 1fr);
+        width: 334px;
+    }
+
+    .fixture-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* ----------------Tablet Device---------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    /* ------------------------- side bar-------------------------- */
+    .side-navigation-bar {
+        width: 734px;
+        height: 64px;
+        margin: auto;
+        background-color: white;
+
+    }
+
+    .navigation {
+        width: auto;
+        padding: 17px 20px;
+        margin: 0 10px;
+    }
+
+    #highlights-id {
+        padding: 17px 45px;
+    }
+
+    #blog-id {
+        padding: 17px 75px;
+        background-color: white;
+        color: #161616;
+    }
+
+    /* ------------------main body -------------------------- */
+    .main-body {
+        grid-template-columns: repeat(1, 1fr);
+        width: 734px;
+    }
+
+    .fixture-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
