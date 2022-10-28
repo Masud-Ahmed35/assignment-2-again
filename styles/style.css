@@ -1,0 +1,7 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+/* Universal Styles */
+body {
+    font-family: 'Finlandica', sans-serif;
+}
